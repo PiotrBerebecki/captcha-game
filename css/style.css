@@ -12,16 +12,16 @@ html {
 @font-face {
   font-family: "ObelixPro";
   /* IE9 Compat Modes */
-  src: url('https://raw.githubusercontent.com/PiotrBerebecki/fonts/master/ObelixPro.eot');
+  src: url('../assets/font/ObelixPro.eot');
   /* IE6-IE8 */
   src: 
-       url('https://raw.githubusercontent.com/PiotrBerebecki/fonts/master/ObelixPro.eot?#iefix') format('embedded-opentype'), 
+       url('../assets/font/ObelixPro.eot?#iefix') format('embedded-opentype'), 
        /* Super Modern Browsers */
-       url('https://raw.githubusercontent.com/PiotrBerebecki/fonts/master/ObelixPro.woff2') format('woff2'), 
+       url('../assets/font/ObelixPro.woff2') format('woff2'), 
        /* Pretty Modern Browsers */
-       url('https://raw.githubusercontent.com/PiotrBerebecki/fonts/master/ObelixPro.woff') format('woff'),
+       url('../assets/font/ObelixPro.woff') format('woff'),
        /* Safari, Android, iOS */
-       url('https://raw.githubusercontent.com/PiotrBerebecki/fonts/master/ObelixPro.ttf') format('truetype');
+       url('../assets/font/ObelixPro.ttf') format('truetype');
 }
 
 body {
@@ -164,7 +164,7 @@ body {
 
 @font-face {
   font-family: HandFacesSt;
-  src: url(https://raw.githubusercontent.com/PiotrBerebecki/fonts/master/HandFacesSt.ttf);
+  src: url('../assets/font/HandFacesSt.ttf');
 }
 
 .graphic {
