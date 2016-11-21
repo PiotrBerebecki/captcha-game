@@ -320,14 +320,26 @@ console.clear();
       infoLinkElement.id = 'info-link';
       infoLinkElement.href = 'https://github.com/PiotrBerebecki/captcha-game';
       infoLinkElement.target = '_blank';
+      
       const infoIconElement = document.createElement('i');
-      infoIconElement.className = 'fa fa-info-circle';
+      // infoIconElement.className = 'fa fa-info-circle';
+      infoIconElement.className = 'fa fa-external-link';
       infoIconElement['aria-hidden'] = 'true';
       infoLinkElement.appendChild(infoIconElement);
+      
       const linkTextElement = document.createElement('span');
       linkTextElement.textContent = 'About this app';
       infoLinkElement.appendChild(linkTextElement);
+      
+      // const externalIconElement = document.createElement('i');
+      // externalIconElement.className = 'fa fa-external-link';
+      // externalIconElement['aria-hidden'] = 'true';
+      // infoLinkElement.appendChild(externalIconElement);
+      
+      
       finishScreenContainerElement.appendChild(infoLinkElement);
+
+
 
       this.root.appendChild(finishScreenContainerElement);
       finishScreenContainerElement.style.opacity = 0;
