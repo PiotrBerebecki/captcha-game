@@ -45,7 +45,7 @@ console.clear();
       imagesIndexesRemaining.splice(imagesIndexesRemaining.indexOf(nextImagesIndex), 1);
       if (imagesIndexesRemaining.length === 0) {
         this.resetImagesRemaining();
-      };
+      }
     },
     
     getRandomNumber: function(min, max) {
