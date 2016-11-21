@@ -206,7 +206,8 @@ console.clear();
       // Create Info Link
       const infoLinkElement = document.createElement('a');
       infoLinkElement.id = 'info-link';
-      infoLinkElement.href = '#';
+      infoLinkElement.href = 'https://github.com/PiotrBerebecki/captcha-game';
+      infoLinkElement.target = '_blank';
       const infoIconElement = document.createElement('i');
       infoIconElement.className = 'fa fa-info-circle';
       infoIconElement['aria-hidden'] = 'true';
