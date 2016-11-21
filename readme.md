@@ -10,8 +10,8 @@ Live version: https://piotrberebecki.github.io/captcha-game/
 ## Development technologies and techniques used include:
 
 * Vanilla JavaScript and pure CSS - All front-end layout has been hand-crafted. Only the fonts have been sourced from external libraries.
-* Model-View-Controller (MVC) Design Pattern - The data used by the app is maintained by the Model. The user interface is specified in the View. App's logic is managed by the Controller.
-* Material Design - The principles of material design have been followed in order to improve accessibility.
+* Model-View-Controller (MVC) design pattern - The data used by the app is maintained by the Model. The user interface is specified in the View. App's logic is managed by the Controller.
+* Material design - The principles of material design have been followed in order to improve accessibility.
 * ES6 - Effort was made to use the latest features of the JavaScript language. This includes: [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const); [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions); [destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment); 
-* Image preloading for smoother user experience - Images that will be displayed on the next screen are preloaded so that they can be quickly rendered.
+* Image preloading - Images that will be displayed on the next screen are preloaded to ensure smoother user experience.
 * Comments - All code includes comments. This will ensure that the app can be updated more easily.
