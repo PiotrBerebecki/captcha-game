@@ -28,10 +28,10 @@ body {
   background-color: #03a9f4;
   font-family: 'ObelixPro', cursive;
   letter-spacing: 0.1em;
-  -webkit-user-select: none;
+/*  -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none;
+          user-select: none;*/
   overflow-y: hidden;
 }
 
