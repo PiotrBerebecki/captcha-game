@@ -1,4 +1,4 @@
-const imageDatabase = [
+var imageDatabase = [
   { set0: [
     { src: './assets/img/sharing-00-00.jpg' },
     { src: './assets/img/sharing-00-01.jpg' },
