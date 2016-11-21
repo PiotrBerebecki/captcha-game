@@ -10,7 +10,7 @@ html {
 }
 
 @font-face {
-  font-family: "ObelixPro";
+  font-family: ObelixPro;
   /* IE9 Compat Modes */
   src: url('../assets/font/ObelixPro.eot');
   /* IE6-IE8 */
@@ -26,13 +26,14 @@ html {
 
 body {
   background-color: #03a9f4;
-  font-family: 'ObelixPro', cursive;
+  font-family:  ObelixPro, Impact, fantasy;
   letter-spacing: 0.1em;
-/*  -webkit-user-select: none;
+  -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
-          user-select: none;*/
+          user-select: none;
   overflow-y: hidden;
+  text-transform: uppercase;
 }
 
 
@@ -151,7 +152,7 @@ body {
   height: 100vh;
   background: #03a9f4;
   -webkit-transition: opacity 0.25s ease-in-out;
-  transition: opacity 0.25s ease-in-out;
+  transition: opacity 0.25s ease-in-out;  
 }
 
 .finishMessage {
@@ -169,7 +170,7 @@ body {
 
 .graphic {
   color: #ffffff;
-  font-family: "HandFacesSt";
+  font-family: HandFacesSt;
   font-size: 10rem;
 }
 
@@ -494,7 +495,7 @@ header > p {
   Grid images can be selected
   thanks to hidden input checkboxes
   which are absolutely positioned
-  on the top of each grid image
+  on the top of every grid image
 */
 .grid-image-container > input {
   position: absolute;
