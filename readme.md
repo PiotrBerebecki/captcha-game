@@ -24,9 +24,9 @@ Live version: https://piotrberebecki.github.io/social-skills-hero/
 ### Running the app in your local environment
 ---
 
-1. Clone the repo
+Clone the repository
 ```
 $ git clone https://github.com/PiotrBerebecki/social-skills-hero.git
 $ cd social-skills-hero
 ```
-2. Open the `index.html` file in your browser
+Open the `index.html` file in your browser
