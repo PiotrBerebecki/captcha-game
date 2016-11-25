@@ -2,7 +2,7 @@
 
 Live version: https://piotrberebecki.github.io/social-skills-hero/
 
-<img src="http://i.imgur.com/0ciMOgP.gif">
+<img src="http://i.imgur.com/TCEYoZo.gif" width="275px" height="auto">
 
 ### The principles behind the app
 ---
