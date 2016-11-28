@@ -127,6 +127,7 @@
     // Initialise the first gameplay screen
     init: function init() {
       this.root = document.getElementById('root');
+      this.isMobileSafari = this.checkIfMobileSafari();
       this.initStartScreen();
       // controller.initGameplayScreen();
     },
@@ -191,6 +192,7 @@
       // Create DOM wrapper divs for the main gameplay screen
       var gameplayScreenContainerElement = document.createElement('div');
       gameplayScreenContainerElement.id = 'gameplay-screen-container';
+
       var gameplayScreenElement = document.createElement('div');
       gameplayScreenElement.id = 'gameplay-screen';
 
@@ -272,6 +274,9 @@
       setTimeout(function () {
         gameplayScreenContainerElement.style.opacity = 1;
       }, this.animationDelay + 20);
+
+      // Adjust the height of the screen for Safari mobile
+      this.adjustHeight(gameplayScreenContainerElement);
 
       // Adjust the styling of the next button for touch devices
       this.adjustTouch('next-button');
@@ -370,6 +375,9 @@
         finishScreenContainerElement.style.opacity = 1;
       }, this.animationDelay + 20);
 
+      // Adjust the height of the screen for Safari mobile
+      this.adjustHeight(finishScreenContainerElement);
+
       this.adjustTouch('finish-button');
     },
 
@@ -383,6 +391,25 @@
             checkboxElements[iClosure].checked = false;
           }, thisClosure.animationDelay);
         })(i, this);
+      }
+    },
+
+    // Check if the user is using mobile Safari
+    // to later fix the Safari issue with 100vh
+    // extending beyond the viewport
+    checkIfMobileSafari: function checkIfMobileSafari() {
+      var userAgent = navigator.userAgent;
+      var iOS = !!userAgent.match(/iPad/i) || !!userAgent.match(/iPhone/i);
+      var webkit = !!userAgent.match(/WebKit/i);
+      var iOSSafari = iOS && webkit && !userAgent.match(/CriOS/i);
+      return iOSSafari;
+    },
+
+    // Fix the Safari issue with 100vh
+    // extending beyond the viewport
+    adjustHeight: function adjustHeight(element) {
+      if (this.isMobileSafari) {
+        element.style.height = document.body.getBoundingClientRect().bottom - 60 + 'px';
       }
     },
 

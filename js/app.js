@@ -151,9 +151,6 @@
       // Create the DOM container for the start screen
       const startScreenContainerElement = document.createElement('div');
       startScreenContainerElement.id = 'start-screen-container';
-      
-      // Adjust the height of the screen for Safari mobile
-      this.adjustHeight(startScreenContainerElement);
 
       // Start screen welcome / title message
       const startTextElement = document.createElement('p');
@@ -187,9 +184,6 @@
       // Create DOM wrapper divs for the main gameplay screen
       const gameplayScreenContainerElement = document.createElement('div');
       gameplayScreenContainerElement.id = 'gameplay-screen-container';
-      
-      // Adjust the height of the screen for Safari mobile
-      this.adjustHeight(gameplayScreenContainerElement);
       
       const gameplayScreenElement = document.createElement('div');
       gameplayScreenElement.id = 'gameplay-screen';
@@ -272,6 +266,9 @@
       setTimeout(function() {
         gameplayScreenContainerElement.style.opacity = 1;
       }, this.animationDelay + 20);
+      
+      // Adjust the height of the screen for Safari mobile
+      this.adjustHeight(gameplayScreenContainerElement);
 
       // Adjust the styling of the next button for touch devices
       this.adjustTouch('next-button');
@@ -313,9 +310,6 @@
       const finishScreenContainerElement = document.createElement('div');
       finishScreenContainerElement.id = 'finish-screen-container';
       finishScreenContainerElement.style.opacity = 0;
-      
-      // Adjust the height of the screen for Safari mobile
-      this.adjustHeight(finishScreenContainerElement);
 
       // Finish screen message
       const finishTextElement = document.createElement('p');
@@ -370,6 +364,9 @@
       setTimeout(function() {
         finishScreenContainerElement.style.opacity = 1;
       }, this.animationDelay + 20);
+      
+      // Adjust the height of the screen for Safari mobile
+      this.adjustHeight(finishScreenContainerElement);
       
       this.adjustTouch('finish-button');
     },
