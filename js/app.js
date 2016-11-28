@@ -123,6 +123,7 @@
     // Initialise the first gameplay screen
     init: function() {
       this.root = document.getElementById('root');
+      this.isMobileSafari = this.checkIfMobileSafari();
       this.initStartScreen();
       // controller.initGameplayScreen();
     },
@@ -150,6 +151,9 @@
       // Create the DOM container for the start screen
       const startScreenContainerElement = document.createElement('div');
       startScreenContainerElement.id = 'start-screen-container';
+      
+      // Adjust the height of the screen for Safari mobile
+      this.adjustHeight(startScreenContainerElement);
 
       // Start screen welcome / title message
       const startTextElement = document.createElement('p');
@@ -183,6 +187,10 @@
       // Create DOM wrapper divs for the main gameplay screen
       const gameplayScreenContainerElement = document.createElement('div');
       gameplayScreenContainerElement.id = 'gameplay-screen-container';
+      
+      // Adjust the height of the screen for Safari mobile
+      this.adjustHeight(gameplayScreenContainerElement);
+      
       const gameplayScreenElement = document.createElement('div');
       gameplayScreenElement.id = 'gameplay-screen';
       
@@ -305,6 +313,9 @@
       const finishScreenContainerElement = document.createElement('div');
       finishScreenContainerElement.id = 'finish-screen-container';
       finishScreenContainerElement.style.opacity = 0;
+      
+      // Adjust the height of the screen for Safari mobile
+      this.adjustHeight(finishScreenContainerElement);
 
       // Finish screen message
       const finishTextElement = document.createElement('p');
@@ -373,6 +384,25 @@
             checkboxElements[iClosure].checked = false;
           }, thisClosure.animationDelay);
         }(i, this));
+      }
+    },
+    
+    // Check if the user is using mobile Safari
+    // to later fix the Safari issue with 100vh
+    // extending beyond the viewport
+    checkIfMobileSafari: function() {
+      const userAgent = navigator.userAgent;
+      const iOS = !!userAgent.match(/iPad/i) || !!userAgent.match(/iPhone/i);
+      const webkit = !!userAgent.match(/WebKit/i);
+      const iOSSafari = iOS && webkit && !userAgent.match(/CriOS/i);
+      return iOSSafari;
+    },
+    
+    // Fix the Safari issue with 100vh
+    // extending beyond the viewport
+    adjustHeight: function(element) {
+      if (this.isMobileSafari) {
+        element.style.height = document.body.getBoundingClientRect().bottom - 60 + 'px';
       }
     },
     
