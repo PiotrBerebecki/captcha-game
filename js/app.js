@@ -129,9 +129,12 @@
     // Initialise the first gameplay screen
     init: function() {
       this.root = document.getElementById('root');
+      
+      // Fix css :active not working on some mobiles
+      document.body.addEventListener('touchstart', () => {}, false);
+      
       this.isMobileSafari = this.checkIfMobileSafari();
       this.initStartScreen();
-      // controller.initGameplayScreen();
     },
     
     // Standard animation delay when changing the screens

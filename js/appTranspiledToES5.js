@@ -2,14 +2,19 @@
 
 (function () {
 
-  /** 
+  /**
+   * 
+   * ====================== CONTENTS =======================
+   *
    * The app consists of three modules:
-   * 1) Model - Represents the data
-   * 2) Controller - Provides data to the view
-   * 3) View - Displays the model data
+   *
+   * 1) MODEL - Represents the data
+   * 2) CONTROLLER - Provides data to the view
+   * 3) VIEW - Displays the model data
+   *
    */
 
-  /* ======================== Model ======================== */
+  /* ======================== MODEL ======================== */
   var model = {
     images: imageDatabase,
     imagesLength: null,
@@ -19,7 +24,7 @@
     currentRound: 1
   };
 
-  /* ======================== Controller ======================== */
+  /* ======================== CONTROLLER ======================== */
   var controller = {
 
     // Initialise the game
@@ -121,15 +126,18 @@
     }
   };
 
-  /* ======================== View ======================== */
+  /* ======================== VIEW ======================== */
   var view = {
 
     // Initialise the first gameplay screen
     init: function init() {
       this.root = document.getElementById('root');
+
+      // Fix css :active not working on some mobiles
+      document.body.addEventListener('touchstart', function () {}, false);
+
       this.isMobileSafari = this.checkIfMobileSafari();
       this.initStartScreen();
-      // controller.initGameplayScreen();
     },
 
     // Standard animation delay when changing the screens
