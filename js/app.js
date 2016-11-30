@@ -1,14 +1,20 @@
 (function() {
   
-  /** 
-   * The app consists of three modules:
-   * 1) Model - Represents the data
-   * 2) Controller - Provides data to the view
-   * 3) View - Displays the model data
-   */
+   
+   /**
+    * 
+    * ====================== CONTENTS =======================
+    *
+    * The app consists of three modules:
+    *
+    * 1) MODEL - Represents the data
+    * 2) CONTROLLER - Provides data to the view
+    * 3) VIEW - Displays the model data
+    *
+    */
   
   
-  /* ======================== Model ======================== */
+  /* ======================== MODEL ======================== */
   const model = {
     images: imageDatabase,
     imagesLength: null,
@@ -19,7 +25,7 @@
   };
   
   
-  /* ======================== Controller ======================== */
+  /* ======================== CONTROLLER ======================== */
   const controller = {
     
     // Initialise the game
@@ -117,7 +123,7 @@
   };
   
   
-  /* ======================== View ======================== */
+  /* ======================== VIEW ======================== */
   const view = {
     
     // Initialise the first gameplay screen
