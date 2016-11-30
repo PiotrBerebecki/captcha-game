@@ -20,7 +20,7 @@ Live version: https://piotrberebecki.github.io/social-skills-hero/
 * Material design - The principles of material design have been followed in order to improve accessibility and usability.
 * ES6 - At the production stage effort was made to use the latest features of the JavaScript language. This includes for example: [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const); [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions); [destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). At the deployment stage the ES6 code has been transpiled down to ES5 to ensure better cross-browser compatibility.
 * Mobile first design - Making sure that the app works on different mobile devices has been prioritised.
-* Web app manifest - The app can be added to the user's home screen without the need to go through an app store. The manifest also specifies the appearance of the splash screen which is shown while the app is loading.
+* Web app manifest - The app can be added to the user's home screen without the need to go through an app store. The `manifest.json` file also specifies the appearance of the splash screen which is shown while the app is loading.
 * Comments - Leaving descriptive comments is a good practice in the long run so JavaScript source code includes comments which explain functions and methods used in the app. This will make the app easier to maintain by the author or the open-source contributors.
 
 ### Running the app in your local environment
