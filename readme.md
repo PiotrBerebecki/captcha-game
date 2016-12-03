@@ -15,7 +15,7 @@ Live version: https://piotrberebecki.github.io/social-skills-hero/
 ---
 
 * Vanilla JavaScript and pure CSS - All front-end layout has been hand-crafted. Only the fonts have been sourced from external libraries.
-* Model-View-Controller (MVC) design pattern - The data used by the app is maintained by the `Model`. The user interface is specified in the `View`. App's logic is managed by the `Controller`.
+* Model-View-Controller (MVC) design pattern - The data used by the app is maintained by the `Model`. The user interface is specified in the `View`. App's logic is managed by the `Controller`. Currently all three parts have been saved in one file (`./js/app.js`). In future this could be improved by splitting the modules into separate files so that the code is easier to read and maintain.
 * Image preloading - Images that will be displayed on the next screen are preloaded to ensure a smoother user experience.
 * Material design - The principles of material design have been followed in order to improve accessibility and usability.
 * ES6 - At the production stage effort was made to use the latest features of the JavaScript language. This includes for example: [let](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/let) and [const](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/const); [arrow functions](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Functions/Arrow_functions); [destructuring assignment](https://developer.mozilla.org/en/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment). At the deployment stage the ES6 code (`./js/app.js`) has been transpiled down to ES5 (`./js/appTranspiledToES5.js`) to ensure better cross-browser compatibility.
