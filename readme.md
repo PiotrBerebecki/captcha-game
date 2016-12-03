@@ -10,6 +10,7 @@ Live version: https://piotrberebecki.github.io/social-skills-hero/
 * Children, teenagers and adolescents with autism and asperger syndrome often have difficulty recognising emotions in social situations. They often miss the body language or facial cues that other people rely on to gauge the moods of others, or even of themselves. As a result, inappropriate responses to situations may occur, for example, laughing or giggling when someone is hurt or upset.
 * Social Skills Hero is a non-competitive app which allows the user to train in identifying and reacting to different social situations.
 * Currently the app covers skills such as: sharing, companionship, empathy, selflessness, kindness, turn-taking, participating, engagement, ability to compromise, teamwork, respecting personal space. More skills will be added in future.
+* The answers are not graded. However to make the app more engaging, a future development may include improving gamification by informing the user how many rounds have been completed and perhaps what skills have been trained.
 
 ### Development technologies and techniques
 ---
