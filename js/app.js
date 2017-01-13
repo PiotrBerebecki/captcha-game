@@ -352,7 +352,7 @@
       // Create a link to info about the app
       const infoLinkElement = document.createElement('a');
       infoLinkElement.id = 'info-link';
-      infoLinkElement.href = 'https://github.com/PiotrBerebecki/captcha-game';
+      infoLinkElement.href = 'https://github.com/PiotrBerebecki/social-skills-hero';
       infoLinkElement.target = '_blank';
       
       const infoIconElement = document.createElement('i');
